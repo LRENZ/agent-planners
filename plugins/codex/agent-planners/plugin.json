@@ -1,0 +1,49 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "agent-planners",
+  "version": "1.1.0",
+  "description": "Agent Planners' MCP server for the ad, analytics, commerce and CRM accounts your workspace connected (Google Ads, Meta, Google Analytics, Shopify, HubSpot and more), signed in with OAuth, plus a skill on using it well.",
+  "author": {
+    "name": "Agent Planners",
+    "email": "hi@agentplanners.com",
+    "url": "https://www.agentplanners.com"
+  },
+  "homepage": "https://www.agentplanners.com/docs/mcp-setup",
+  "repository": "https://github.com/LRENZ/agent-planners",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "advertising",
+    "google-ads",
+    "meta-ads",
+    "ga4",
+    "analytics",
+    "marketing"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Agent Planners",
+        "shortDescription": "Ads, analytics and store data",
+        "longDescription": "Connects Codex to Agent Planners' MCP server. Codex can hand Agent Planners a goal to plan and run, or call the ad, analytics, commerce and CRM tools of the accounts your workspace connected (Google Ads, Meta, Google Analytics, Shopify, HubSpot and more). You sign in once with OAuth and approve what Codex may do; by default every change it proposes waits for a person in your workspace to approve it.",
+        "developerName": "Agent Planners",
+        "category": "Productivity",
+        "websiteURL": "https://www.agentplanners.com",
+        "privacyPolicyURL": "https://www.agentplanners.com/privacy",
+        "termsOfServiceURL": "https://www.agentplanners.com/terms",
+        "capabilities": [
+          "Read",
+          "Write"
+        ],
+        "defaultPrompt": [
+          "Which of my connected ad accounts spent the most last week?",
+          "Show Google Ads spend by campaign for the last 7 days",
+          "Start a weekly cross-channel performance review and send me the report"
+        ],
+        "brandColor": "#A490DF",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/icon.png"
+      }
+    }
+  }
+}

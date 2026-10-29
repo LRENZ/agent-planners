@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.LRENZ/agent-planners",
+  "title": "Agent Planners",
+  "description": "Ads, analytics, store and CRM accounts (Google Ads, Meta, GA4, Shopify, HubSpot…) over OAuth.",
+  "version": "1.1.0",
+  "websiteUrl": "https://www.agentplanners.com/docs/mcp-setup",
+  "repository": {
+    "url": "https://github.com/LRENZ/agent-planners",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.agentplanners.com/api/mcp"
+    }
+  ]
+}

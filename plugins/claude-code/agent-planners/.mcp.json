@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "agent-planners": {
+      "type": "http",
+      "url": "https://www.agentplanners.com/api/mcp"
+    }
+  }
+}

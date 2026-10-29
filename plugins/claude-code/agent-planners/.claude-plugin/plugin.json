@@ -1,0 +1,28 @@
+{
+  "name": "agent-planners",
+  "displayName": "Agent Planners",
+  "version": "1.1.0",
+  "description": "Agent Planners' MCP server for the ad, analytics, commerce and CRM accounts your workspace connected (Google Ads, Meta, Google Analytics, Shopify, HubSpot and more), signed in with OAuth, plus a skill on using it well.",
+  "author": {
+    "name": "Agent Planners",
+    "email": "hi@agentplanners.com",
+    "url": "https://www.agentplanners.com"
+  },
+  "homepage": "https://www.agentplanners.com/docs/mcp-setup",
+  "repository": "https://github.com/LRENZ/agent-planners",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "advertising",
+    "google-ads",
+    "meta-ads",
+    "ga4",
+    "analytics",
+    "marketing"
+  ],
+  "icon": "./assets/icon.png",
+  "documentationUrl": "https://www.agentplanners.com/docs/oauth",
+  "supportUrl": "https://www.agentplanners.com/support",
+  "privacyPolicyUrl": "https://www.agentplanners.com/privacy",
+  "termsOfServiceUrl": "https://www.agentplanners.com/terms"
+}

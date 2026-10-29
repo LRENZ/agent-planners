@@ -1,0 +1,20 @@
+{
+  "name": "agent-planners",
+  "interface": {
+    "displayName": "Agent Planners"
+  },
+  "plugins": [
+    {
+      "name": "agent-planners",
+      "source": {
+        "source": "local",
+        "path": "./plugins/codex/agent-planners"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

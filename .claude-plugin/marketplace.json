@@ -1,0 +1,17 @@
+{
+  "name": "agent-planners",
+  "description": "Agent Planners for Claude Code: the MCP server for your connected ad, analytics, commerce and CRM accounts, signed in with OAuth.",
+  "owner": {
+    "name": "Agent Planners",
+    "email": "hi@agentplanners.com",
+    "url": "https://www.agentplanners.com"
+  },
+  "plugins": [
+    {
+      "name": "agent-planners",
+      "source": "./plugins/claude-code/agent-planners",
+      "description": "Run tasks and call ad, analytics, commerce and CRM tools across the accounts your Agent Planners workspace connected. Sign in once with OAuth; changes wait for approval by default.",
+      "category": "productivity"
+    }
+  ]
+}
