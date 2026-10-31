@@ -1,5 +1,9 @@
 # Make video ads on this computer
 
+A long tool (a server render, a review, a breakdown) may answer with `jobPending` and a `jobId` after about 45 seconds. It carries on by itself: call `internal__get_creative_job` with that `jobId` for the result, and never start it again.
+
+Keep the Asset Library tidy as you go: a folder is a tag. `internal__list_asset_folders` shows them, `internal__tag_assets` moves files in and out, `internal__update_asset_folder` renames or removes one (the files stay).
+
 The agent on this computer does the expensive part (the render, on the user's own subscription and machine). Agent Planners does the rest: the ad libraries, the breakdown, the platform specs, the review and the uploads.
 
 ## 1. Find an ad worth studying
@@ -48,7 +52,7 @@ Only after the user has seen the final video. `internal__conform_creative` when 
 
 ## Costs to mention
 
-Rendering here uses the user's own machine and coding agent. Agent Planners credits pay for the spy calls (about 60 credits a search), the breakdown and each review (model tokens, usually a few hundred credits or less), and a flat charge per call.
+Rendering here uses the user's own machine and coding agent. Agent Planners credits pay for the spy calls (about 180 credits for all three libraries, 60 for one), the breakdown and each review (model tokens, usually a few hundred credits or less), and a flat charge per call.
 
 ---
 
