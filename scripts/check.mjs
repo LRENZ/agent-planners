@@ -25,6 +25,9 @@ const versions = [cc?.version, cx?.version, gem?.version, reg?.version];
 if (new Set(versions).size !== 1) problems.push(`versions disagree: ${JSON.stringify(versions)}`);
 const skill = (p) => readFileSync(`plugins/${p}/agent-planners/skills/using-agent-planners/SKILL.md`, "utf8");
 if (skill("claude-code") !== skill("codex")) problems.push("the two SKILL.md copies differ");
+const videoSkill = (p) => readFileSync(`plugins/${p}/agent-planners/skills/make-video-ads/SKILL.md`, "utf8");
+if (videoSkill("claude-code") !== videoSkill("codex")) problems.push("the two make-video-ads copies differ");
+if (!readFileSync("GEMINI.md", "utf8").includes(videoSkill("claude-code").replace(/^---\n[\s\S]*?\n---\n/, "").trim())) problems.push("GEMINI.md does not hold the make-video-ads skill");
 const body = skill("claude-code").replace(/^---\n[\s\S]*?\n---\n/, "");
 if (!readFileSync("GEMINI.md", "utf8").endsWith(body)) problems.push("GEMINI.md is not the skill's body");
 // Built from pieces so this file does not match its own pattern.

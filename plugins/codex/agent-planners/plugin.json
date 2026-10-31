@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "agent-planners",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Agent Planners' MCP server for the ad, analytics, commerce and CRM accounts your workspace connected (Google Ads, Meta, Google Analytics, Shopify, HubSpot and more), signed in with OAuth, plus a skill on using it well.",
   "author": {
     "name": "Agent Planners",
